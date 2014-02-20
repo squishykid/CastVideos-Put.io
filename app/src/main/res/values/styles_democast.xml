@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Democast" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@drawable/selectable_background_democast</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Democast</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Democast</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Democast</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Democast</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Democast</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_democast</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_democast</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Democast</item>
+
+        <!-- item name="android:titleTextStyle">@style/WhiteText</item -->
+
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.Democast.Widget</item>
+
+        <!-- Seekbar -->
+        <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+    </style>
+
+    <!--
+    style name="WhiteText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+      <item name="android:textColor">@android:color/white</item>
+    </style
+    -->
+
+    <style name="ActionBar.Solid.Democast" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_democast</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_democast</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_democast</item>
+        <item name="progressBarStyle">@style/ProgressBar.Democast</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Democast" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@drawable/ab_transparent_democast</item>
+        <item name="progressBarStyle">@style/ProgressBar.Democast</item>
+    </style>
+
+    <style name="PopupMenu.Democast" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_democast</item>
+    </style>
+
+    <style name="DropDownListView.Democast" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_democast</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Democast" parent="@style/Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_democast</item>
+    </style>
+
+    <style name="DropDownNav.Democast" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_democast</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_democast</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_democast</item>
+    </style>
+
+    <style name="ProgressBar.Democast" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_democast</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Democast" parent="@style/Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_democast</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Democast.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Democast</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Democast</item>
+    </style>
+</resources>

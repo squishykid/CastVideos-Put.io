@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <style name="Theme.Democast" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_democast</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Democast</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Democast</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Democast</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Democast</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Democast</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_democast</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_democast</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Democast</item>
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Democast.Widget</item>
+
+        <!-- Seekbar -->
+        <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+
+        <!-- Dialog -->
+        <!--
+        item name="android:dialogTheme">@style/CastDialog</item>
+        <item name="android:alertDialogTheme">@style/CastDialog</item
+        -->
+    </style>
+
+    <!-- Dialog -->
+    <style name="CastDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowTitleStyle">@style/CastDialogWindowTitle</item>
+    </style>
+
+    <style name="CastDialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#eeff41</item>
+    </style>
+    <!-- End of Dialog -->
+
+    <style name="ActionBar.Solid.Democast" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_democast</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_democast</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_democast</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Democast</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Democast" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_democast</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Democast</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Democast.Widget" parent="@style/Theme.AppCompat">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Democast</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Democast</item>
+    </style>
+
+    <style name="SeekBarAppTheme" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/apptheme_scrubber_control_selector_holo_light</item>
+    </style>
+
+</resources>
